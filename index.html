@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DasiyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwindcss -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary' : '#E76F51',
+                        'bike-primary-bg': 'rgba(231,111,81,0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <title>Biker Zone BD</title>
+</head>
+<body class="poppins-font ">
+    <header class="md:container md:mx-auto bg-sky-200">
+        <nav>
+                        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-base">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                </div>
+                <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-base   px-1">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <a class="btn btn-primary bg-bike-primary text-white">Login</a>
+            </div>
+            </div>
+        </nav>
+        <!-- slider/carousel -->
+         <div class="carousel w-full lg:h-[550px] bike-primary-bg">
+            <!-- slide-1 -->
+     <div id="slide1" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+            <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                    <br>with smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, harum.</p>
+                <button class="btn btn-primary bg-bike-primary">Purchase</button>
+            </div>
+            <div>
+                <img src="Images/bike1.png"class="w-[400px]" />
+            </div>
+        </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+     
+  </div>
+  <!-- slide-2 -->
+  <div id="slide2" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+            <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                    <br>with smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, harum.</p>
+                <button class="btn btn-primary bg-bike-primary">Purchase</button>
+            </div>
+            <div>
+                <img src="Images/bike2.png"class="w-[400px]" />
+            </div>
+        </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+   <!-- slide-3 -->
+  <div id="slide3" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+            <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                    <br>with smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, harum.</p>
+                <button class="btn btn-primary bg-bike-primary">Purchase</button>
+            </div>
+            <div>
+                <img src="Images/bike3.png"class="w-[400px]" />
+            </div>
+        </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <!-- slide-04 -->
+  <div id="slide4" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+            <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                    <br>with smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, harum.</p>
+                <button class="btn btn-primary bg-bike-primary">Purchase</button>
+            </div>
+            <div>
+                <img src="Images/bike4.png"class="w-[400px]" />
+            </div>
+        </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+    </header>
+    <main class="md:container md:mx-auto">
+        <!-- featured bike -->
+        <section class="my-23 bg-sky-200">
+            <h3 class="text-4xl text-center font-semibold"> Fetured Bikes In This Year </h3>
+            <h4 class="text-center underline">Best Bike Collection</h4>
+            <div class="flex  flex-col lg:flex-row  gap-6 justify-center items-center my-8" >
+                <img class="h-48 w-96 object-scale-down" src="Images/53-moto-png-image-motorcycle-png.png" alt="" >
+                <img class="h-48 w-96 object-scale-down" src="Images/23462-4-biker-transparent-background.png" alt="">
+                <img class="h-48 w-96 object-scale-down" src="Images/36405-5-ducati-hd.png" alt="">
+            </div>
+        </section>
+        <!-- latest News -->
+         <section my-24>
+            <h3 class="text-5xl mb-12 font-semibold text-center">Latest Bikes</h3>
+            <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- first card -->
+                 <div class="card bg-base-100  shadow-sm">
+                <figure>
+                    <img src="Images/23303-3-racing-motorbike-photos.png"alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl"> Yamaha RX-07</h2>
+                    <p>This bike is 450cc Bike. with body kit</p>
+                    <div class="card-actions ">
+                    <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                </div>
+                <!-- second card -->
+                 <div class="card bg-base-100  shadow-sm">
+                <figure>
+                    <img src="Images/15-blue-moto-png-image-motorcycle-png.png"alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl"> Yamaha Rl-Bullet</h2>
+                    <p>With body kit and powerful engine which is 350cc</p>
+                    <div class="card-actions ">
+                    <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                </div>
+                <!-- third card -->
+                 <div class="card bg-base-100  shadow-sm">
+                <figure>
+                    <img src="Images/23462-4-biker-transparent-background.png"alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-3xl"> Repsol CV-R</h2>
+                    <p>This bike is 500cc Bike. with body kit. This beast is power house</p>
+                    <div class="card-actions ">
+                    <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </section>
+         <!-- happy clients -->
+          <section class="my-24">
+            <h3 class="text-5xl mb-12 font-semibold text-center">Happy<span class="text-purple-400">Clients Says</span></h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- first review -->
+                    <div class="card bg-base-100  p-9 border border-gray-500">
+                        <figure>
+                            <img class="w-36" src="Images/cristiano.JPG"alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+
+                            <p>Cr7 is a Global soccer Superstar. He bought the latest and highest CC bike from US.</p>
+                        <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                        </div>
+                    <div class=" text-center space-y-4 mt-4 ">
+                        <h2  class="text-purple-500 text-center font-semibold">Cristiano Ronaldo</h2>
+                        <p class="text-slate-800">Soccer Player</p>
+                    </div>
+                    </div>
+            </div>
+                    <!-- Second review -->
+                    <div class="card bg-base-100  p-9 border border-gray-500">
+                        <figure>
+                            <img class="w-36" src="Images/afwggg.JPG"alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+
+                            <p>BM is a web Developer. He bought the latest Yamaha bike from US.</p>
+                        <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                        </div>
+                    <div class=" text-center space-y-4 mt-4 ">
+                        <h2  class="text-purple-500 text-center font-semibold">BM Seaym</h2>
+                        <p class="text-slate-800">CS Engineer</p>
+                    </div>
+                    </div>
+            </div>
+                    <!-- Third review -->
+                    <div class="card bg-base-100  p-9 border border-gray-500">
+                        <figure>
+                            <img class="w-36" src="Images/week.JPG"alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+
+                            <p>Abeel known as The weekend. He is a Global  Superstar. He  bought latest Ducatti KN-09 from us</p>
+                        <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" checked="checked"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star"  />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                        </div>
+                    <div class=" text-center space-y-4 mt-4 ">
+                        <h2  class="text-purple-500 text-center font-semibold">The Weekend</h2>
+                        <p class="text-slate-800">Singer</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+            
+
+        </section>
+        <!-- FAQ -->
+         <section class="my-24 ">
+            <h3 class="text-5xl mb-12 font-semibold text-center lg:gap-24">Frequently Asked <span class="text-purple-400">Questions</span></h3>
+                        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+                <img src="Images/faq.png"class=" w-1/2 lg:max-w-sm rounded-lg shadow-2xl"/>
+                <div>
+                 <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title font-semibold">What are the most important things I should know about riding a bike?</div>
+                <div class="collapse-content text-sm">First rule, You should wear a helmet and riding jacket.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">How can I tell if my helmet is old and I need a new One?</div>
+                <div class="collapse-content text-sm">You can just reach out to us via our contact number and Page.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">What gear should I wear while riding?</div>
+                <div class="collapse-content text-sm">Always wear a certified helmet, gloves, jacket, and protective pants and boots to stay safe in case of an accident.</div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">How often should I service my bike?</div>
+                <div class="collapse-content text-sm">You should service your bike every 3,000–5,000 km or as recommended in the owner's manual to keep it running smoothly and safely.</div>
+                </div>
+            </div>
+            </div>
+         </section>
+
+    </main>
+<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+  <aside>
+    <p>
+      Bike Zone BD Ltd.
+      <br />
+      Providing reliable Bikes since 1992
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Social</h6>
+    <div class="grid grid-cols-1 gap-4">
+      <a>
+        <img class="w-36" src="Images/android.png" alt="">
+      </a>
+      <a>
+        <img class="w-36" src="Images/ios.png" alt="">
+      </a>
+    </div>
+  </nav>
+</footer>
+</body>
+</html>
